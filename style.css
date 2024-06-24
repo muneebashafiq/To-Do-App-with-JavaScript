@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(130deg, #383853 , #252C3C);
+}
+
+.container h1{
+    padding-top: 100px;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    color: #FFF;
+    font-size: 42px;
+}
+
+.input-field{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    filter: drop-shadow(5px 5px 8px rgba(0,0,0,0.186));
+}
+
+input{
+    padding: 1rem;
+    flex: 1;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    opacity: 0.9;
+    border-bottom-left-radius: 49px;
+    border-top-left-radius: 49px;
+    padding-left: 30px;
+}
+
+
+button.addBtn{
+    font-size: 33px;
+    outline: none;
+    border: none;
+    padding: 4px 21px;
+    background: linear-gradient(180deg, #FA916D, #D8505C);
+    color: #FFF;
+    border-bottom-right-radius: 49px;
+    border-top-right-radius: 49px;
+    cursor: pointer;
+}
+
+button.addBtn:hover{
+    box-shadow: 1px 1px 4px 3px rgba(255, 255, 255, 0.2);
+}
+
+input:focus{
+    opacity: 1;
+}
+
+.list-container{
+    width: 20%;
+    margin: 10px auto;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, #FA916D, #D8505C);
+    filter: drop-shadow(5px 5px 8px rgba(0,0,0,0.186));
+    border-radius: 20px;
+    color: #FFF;
+}
+
+.task li{
+    width: 70%;
+    padding-left: 15px;
+}
+
+.list-container button{
+    font-size: 22px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 0;
+    transition: 0.4s all ease-in-out;
+    background: #e6e6e6;
+    
+}
+
+.checked>li{
+    text-decoration: line-through;
+}
+
+.checked {
+    opacity: 0.7;
+}
+
+.list-container button:hover{
+    background: #FFF;
+    box-shadow: 0px 0px 5px 6px rgba(255, 255, 255, 0.2);
+}
