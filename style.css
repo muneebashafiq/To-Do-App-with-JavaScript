@@ -11,7 +11,8 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(130deg, #383853 , #252C3C);
+/*     background: linear-gradient(130deg, #383853 , #252C3C); */
+    background:black;
 }
 
 .container h1{
